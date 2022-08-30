@@ -231,7 +231,7 @@ class CourseSearcher:
 
     def _refresh_csrfToken(self, session):
         try:
-            response = self.session.get(
+            response = session.get(
                 "http://yjsxk.fudan.edu.cn/yjsxkapp/sys/xsxkappfudan/xsxkHome/gotoChooseCourse.do",
                 timeout=5,
             )
